@@ -35,7 +35,7 @@ const newsCollection = defineCollection({
   schema: () =>
     z.object({
       title: z.string(),
-      date: z.string(),
+      date: z.date(),
     }),
 });
 
@@ -44,4 +44,4 @@ export const collections = {
   foundations: foundationsCollection,
   workshops: workshopsCollection,
   news: newsCollection, 
-};
+}; 
