@@ -1,4 +1,6 @@
 ---
+import { render } from "astro:content";
+import Markdown from "../../layouts/Markdown.astro"; 
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -9,7 +11,32 @@ export async function getStaticPaths() {
     }));
 }
 
-const { workshop } = Astro.props;
+const { workshop } = Astro.props; 
+const {Content} = await render(workshop); 
 ---
 
-<h1>{workshop.data.title}</h1>
+<Markdown>
+  <div slot="top">
+    <a href="/#workshops">Workshops</a>
+    <h1><span>{workshop.data.title}</span></h1>
+  </div>
+
+  <Content /> 
+
+  <div slot="sidebar">
+    <img
+      width="300"
+      height="300"
+      src={workshop.data.image.src}
+      alt="workshop image"
+      class="image"
+    />
+  </div>
+</Markdown>
+
+<style>
+  a {
+    display: block;
+    margin-bottom: var(--sp-m);
+  }
+</style>
