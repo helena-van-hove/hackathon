@@ -3,6 +3,7 @@ name: Neal Willems
 function: Creative Technologist
 pic: img/neal.jpeg
 bio: Creative technologist and educator who explores the intersection of art, technology, and human creativity
+pubDate: 2024-10-15
 ---
 
 Neal Willems is a creative technologist and educator who explores the intersection of art, technology, and human creativity. With a deep understanding of code and design, he creates algorithmic art that pushes the boundaries of traditional aesthetics, combining randomness, geometry, and dynamic systems.
