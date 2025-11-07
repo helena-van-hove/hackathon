@@ -31,7 +31,7 @@ const foundationsCollection = defineCollection({
 });
 
 const newsCollection = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/foundations" }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/news" }),
   schema: () =>
     z.object({
       title: z.string(),
@@ -43,5 +43,5 @@ export const collections = {
   team: teamCollection,
   foundations: foundationsCollection,
   workshops: workshopsCollection,
-  news: newsCollection,
+  news: newsCollection, 
 };
