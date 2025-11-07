@@ -3,6 +3,7 @@ name: Casey Decock
 function: Generative Artist/Educator
 pic: img/casey.jpeg
 bio: Generative artist and educator who bridges art and technology
+pubDate: 2024-10-15
 ---
 
 Casey Decock is a passionate generative artist and educator who explores the intersection of art, technology, and human creativity. With a deep understanding of code and design, he creates algorithmic art that pushes the boundaries of traditional aesthetics, combining randomness, geometry, and dynamic systems.
