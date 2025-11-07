@@ -1,8 +1,8 @@
 ---
-import WorkshopCard from "./WorkshopCard.astro"; 
 /* check WorkshopCard.astro to get an idea of how to use these themes */
 const themes = ["grey", "green", "black"];
 import { getCollection } from "astro:content";
+import WorkshopCard from "./WorkshopCard.astro"; 
 const workshops = await getCollection("workshops");
 ---
 
@@ -20,7 +20,7 @@ const workshops = await getCollection("workshops");
     {
       workshops.map((workshop) => (
         <li>
-          <a href={`/workshops/${workshop.id}`}>{workshop.data.title}</a>
+          <WorkshopCard workshop={workshop}/> 
         </li>
       ))
     }
