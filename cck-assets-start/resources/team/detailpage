@@ -11,11 +11,11 @@ export async function getStaticPaths() {
 <Markdown>
   <div slot="top">
     <a href="/#team">Team</a>
-    <h2><span>{##NAME##}</span></h2>
+    <h2><span>{team.name}</span></h2>
   </div>
   ##CONTENT##
   <div slot="sidebar" class="profile">
-    <img width="300" height="300" src={##PIC##} alt="" class="image" />
+    <img width="300" height="300" src={member.data.pic} alt="" class="image" />
   </div>
 </Markdown>
 
